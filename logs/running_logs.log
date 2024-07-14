@@ -1,2 +1,35 @@
 [2024-07-14 13:23:12,399: INFO: main: Welcome to our custom log]
 [2024-07-14 13:24:20,025: INFO: main: Welcome to our custom log]
+[2024-07-14 15:18:47,698: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-14 15:18:47,707: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-14 15:18:47,711: INFO: common: created directory at: artifacts]
+[2024-07-14 15:18:47,711: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-14 15:18:47,717: INFO: 986331348: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 15:19:01,830: INFO: 986331348: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 15:34:27,201: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-14 15:34:27,201: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-14 15:34:27,201: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-14 15:34:27,201: INFO: common: created directory at: artifacts]
+[2024-07-14 15:34:27,210: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-14 15:34:27,212: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 15:34:42,040: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 15:34:44,842: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-14 15:34:44,843: INFO: main: *******************]
+[2024-07-14 15:34:44,843: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-14 15:34:44,846: ERROR: main: name 'PrepareBaseModelTrainingPipeline' is not defined]
+Traceback (most recent call last):
+  File "c:/Users/HP/Desktop/Kidney/Kidney-Disease-Classification-Deep-Learning-Project/main.py", line 26, in <module>
+    prepare_base_model = PrepareBaseModelTrainingPipeline()
+NameError: name 'PrepareBaseModelTrainingPipeline' is not defined
+[2024-07-14 15:36:03,143: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-14 15:36:03,152: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-14 15:36:03,157: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-14 15:36:03,161: INFO: common: created directory at: artifacts]
+[2024-07-14 15:36:03,162: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-14 15:36:03,163: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 15:36:16,987: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 15:36:18,996: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
