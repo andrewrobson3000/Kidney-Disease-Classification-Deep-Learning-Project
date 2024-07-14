@@ -33,3 +33,28 @@ NameError: name 'PrepareBaseModelTrainingPipeline' is not defined
 [2024-07-14 15:36:18,996: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-07-14 15:54:11,141: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-14 15:54:11,146: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-14 15:54:11,147: INFO: common: created directory at: artifacts]
+[2024-07-14 15:54:11,150: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-14 15:54:26,818: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-14 16:21:55,567: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-14 16:21:55,567: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-14 16:21:55,567: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-14 16:21:55,567: INFO: common: created directory at: artifacts]
+[2024-07-14 16:21:55,578: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-14 16:21:55,579: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 16:22:09,515: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 16:22:10,646: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-14 16:23:19,045: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-14 16:23:19,050: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-14 16:23:19,053: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-14 16:23:19,054: INFO: common: created directory at: artifacts]
+[2024-07-14 16:23:19,054: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-14 16:23:19,056: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 16:23:33,488: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-14 16:23:34,729: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
