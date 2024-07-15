@@ -311,3 +311,80 @@ x==========x]
 [2024-07-15 16:07:01,920: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
 
 x==========x]
+[2024-07-15 16:16:31,611: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-15 16:16:31,614: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-15 16:16:31,618: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-15 16:16:31,619: INFO: common: created directory at: artifacts]
+[2024-07-15 16:16:31,619: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-15 16:16:31,620: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-15 16:16:45,574: ERROR: stage_01_data_ingestion: [WinError 32] The process cannot access the file because it is being used by another process: 'artifacts/data_ingestion\\data.zip7m7n_b4j.part']
+Traceback (most recent call last):
+  File "C:\Users\HP\miniconda3\envs\kidney\lib\shutil.py", line 791, in move
+    os.rename(src, real_dst)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'artifacts/data_ingestion\\data.zip7m7n_b4j.part' -> 'artifacts/data_ingestion/data.zip'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 26, in <module>
+    obj.main()
+  File "src/cnnClassifier/pipeline/stage_01_data_ingestion.py", line 17, in main
+    data_ingestion.download_file()
+  File "c:\users\hp\desktop\kidney\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\data_ingestion.py", line 33, in download_file
+    raise e
+  File "c:\users\hp\desktop\kidney\kidney-disease-classification-deep-learning-project\src\cnnClassifier\components\data_ingestion.py", line 28, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+  File "C:\Users\HP\miniconda3\envs\kidney\lib\site-packages\gdown\download.py", line 381, in download
+    shutil.move(tmp_file, output)
+  File "C:\Users\HP\miniconda3\envs\kidney\lib\shutil.py", line 812, in move
+    os.unlink(src)
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'artifacts/data_ingestion\\data.zip7m7n_b4j.part'
+[2024-07-15 16:17:17,442: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-15 16:17:17,446: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-15 16:17:17,448: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-15 16:17:17,449: INFO: common: created directory at: artifacts]
+[2024-07-15 16:17:17,450: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-15 16:17:17,451: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-15 16:17:32,224: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-15 16:17:33,502: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-15 16:17:38,809: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-15 16:17:38,813: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-15 16:17:38,816: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-15 16:17:38,816: INFO: common: created directory at: artifacts]
+[2024-07-15 16:17:38,817: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-15 16:17:38,817: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-15 16:17:52,901: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2024-07-15 16:17:54,458: INFO: stage_01_data_ingestion: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-15 16:18:10,184: INFO: stage_02_prepare_base_model: *******************]
+[2024-07-15 16:18:10,184: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model started <<<<<<]
+[2024-07-15 16:18:10,188: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-15 16:18:10,192: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-15 16:18:10,194: INFO: common: created directory at: artifacts]
+[2024-07-15 16:18:10,195: INFO: common: created directory at: artifacts/prepare_base_model]
+[2024-07-15 16:18:10,782: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-15 16:18:11,182: INFO: stage_02_prepare_base_model: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2024-07-15 16:18:20,897: INFO: stage_03_model_training: *******************]
+[2024-07-15 16:18:20,898: INFO: stage_03_model_training: >>>>>> stage Training started <<<<<<]
+[2024-07-15 16:18:20,903: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-15 16:18:20,906: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-15 16:18:20,907: INFO: common: created directory at: artifacts]
+[2024-07-15 16:18:20,908: INFO: common: created directory at: artifacts\training]
+[2024-07-15 16:24:30,037: INFO: stage_03_model_training: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2024-07-15 16:24:41,384: INFO: stage_04_model_evaluation: *******************]
+[2024-07-15 16:24:41,385: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage started <<<<<<]
+[2024-07-15 16:24:41,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-15 16:24:41,398: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-15 16:24:41,399: INFO: common: created directory at: artifacts]
+[2024-07-15 16:25:08,297: INFO: common: json file saved at: scores.json]
+[2024-07-15 16:25:08,299: INFO: common: json file saved at: scores.json]
+[2024-07-15 16:25:08,300: INFO: stage_04_model_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
